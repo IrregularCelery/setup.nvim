@@ -23,7 +23,7 @@ vim.opt.undofile = true
 
 vim.opt.showmode = false
 
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
