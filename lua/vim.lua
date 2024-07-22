@@ -8,7 +8,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
 
