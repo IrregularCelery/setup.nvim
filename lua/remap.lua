@@ -15,10 +15,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "<ESC>", "<cmd>nohlsearch<CR>")
 
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set({"n", "v", "i"}, "<left>", '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set({"n", "v", "i"}, "<right>", '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set({"n", "v", "i"}, "<up>", '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set({"n", "v", "i"}, "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
