@@ -7,6 +7,9 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
 		config = function()
 			require("mason-lspconfig").setup({
 				automatic_installation = true,
@@ -24,21 +27,6 @@ return {
 
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
-			})
-
-			lspconfig.arduino_language_server.setup({
-				capabilities = capabilities,
-				cmd = {
-					"arduino-language-server",
-					"-cli-config",
-					"~/.arduino15/arduino-cli.yaml",
-					"-cli",
-					"arduino-cli",
-					"-clangd",
-					"clangd",
-					"-fqbn",
-					"arduino:avr:micro",
-				},
 			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
