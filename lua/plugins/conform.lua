@@ -20,7 +20,6 @@ return { -- Autoformat
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				toml = { "prettier" },
-				["*"] = { "codespell" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {
