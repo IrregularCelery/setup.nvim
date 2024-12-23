@@ -23,6 +23,10 @@ vim.opt.undofile = true
 
 vim.opt.showmode = false
 
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
+
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
