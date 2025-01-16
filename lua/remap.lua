@@ -7,16 +7,20 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- Prevent from yanking the selected text
+-- Prevents from yanking the selected text/word
 vim.keymap.set("x", "p", [["_dP]], { noremap = true })
+vim.keymap.set("n", "x", [["_x]], { noremap = true })
 vim.keymap.set("n", "ciw", [["_ciw]], { noremap = true })
 vim.keymap.set("n", 'ci"', [["_ci"]], { noremap = true })
-vim.keymap.set("n", "ci'", [["_ci'"]], { noremap = true })
-vim.keymap.set("n", "ci)", [["_ci)"]], { noremap = true })
-vim.keymap.set("n", "ci(", [["_ci("]], { noremap = true })
-vim.keymap.set("n", "ci]", [["_ci]"]], { noremap = true })
-vim.keymap.set("n", "ci}", [["_ci}"]], { noremap = true })
-vim.keymap.set("n", "ci>", [["_ci>"]], { noremap = true })
+vim.keymap.set("n", "ci'", [["_ci']], { noremap = true })
+vim.keymap.set("n", "ci(", [["_ci(]], { noremap = true })
+vim.keymap.set("n", "ci)", [["_ci)]], { noremap = true })
+vim.keymap.set("n", "ci[", '"_ci[', { noremap = true })
+vim.keymap.set("n", "ci}", '"_ci]', { noremap = true })
+vim.keymap.set("n", "ci{", [["_ci{]], { noremap = true })
+vim.keymap.set("n", "ci}", [["_ci}]], { noremap = true })
+vim.keymap.set("n", "ci<", [["_ci<]], { noremap = true })
+vim.keymap.set("n", "ci>", [["_ci>]], { noremap = true })
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
