@@ -32,6 +32,7 @@ return {
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", telescope.lsp_definitions, {})
 			vim.keymap.set("n", "gr", telescope.lsp_references, {})
+			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<leader>vh", telescope.help_tags, {})
 		end,
