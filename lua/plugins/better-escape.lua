@@ -10,6 +10,10 @@ return {
 						k = "<Esc>",
 						j = "<Esc>",
 					},
+					k = {
+						k = "<Esc>",
+						j = "<Esc>",
+					},
 				},
 				v = {
 					j = {
