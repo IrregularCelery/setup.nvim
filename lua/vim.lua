@@ -23,8 +23,6 @@ vim.opt.undofile = true
 
 vim.opt.showmode = false
 
-vim.opt.wrap = false
-
 vim.opt.foldmethod = "indent"
 vim.opt.foldenable = false
 vim.opt.foldlevel = 99
