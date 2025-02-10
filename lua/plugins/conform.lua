@@ -19,7 +19,6 @@ return { -- Autoformat
 				json = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
-				toml = { "prettier" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {

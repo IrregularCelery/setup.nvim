@@ -30,7 +30,7 @@ local function create_divider(text)
 	local padding = math.floor((divider_length - #text) / 2)
 	local divider = comment_start
 		.. " "
-		.. string.rep("-", padding - 3) -- Accounting for the spaces
+		.. string.rep("-", padding - 4) -- Accounting for the spaces
 		.. " "
 		.. text
 		.. " "
