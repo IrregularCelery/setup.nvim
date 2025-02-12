@@ -11,9 +11,6 @@ return {
 			window = {
 				position = "left",
 				width = 30,
-				mappings = {
-					["<space>"] = "open",
-				},
 			},
 			event_handlers = {
 				{
