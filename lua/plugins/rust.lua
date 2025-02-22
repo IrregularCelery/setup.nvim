@@ -10,7 +10,7 @@ return {
 			local codelldb_path = ext_path .. "adapter/codelldb"
 			local liblldb_path = ext_path .. "lldb/lib/liblldb.dylib"
 
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			rt.setup({
 				server = {
 					on_attach = function(_, bufnr)
