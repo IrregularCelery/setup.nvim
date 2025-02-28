@@ -22,7 +22,9 @@ vim.keymap.set("n", "ci}", [["_ci}]], { noremap = true })
 vim.keymap.set("n", "ci<", [["_ci<]], { noremap = true })
 vim.keymap.set("n", "ci>", [["_ci>]], { noremap = true })
 
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+-- Buffer navigation
+vim.keymap.set("n", "<leader>l", ":bnext<CR>")
+vim.keymap.set("n", "<leader>h", ":bprevious<CR>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
