@@ -12,6 +12,7 @@ return { -- Autoformat
 				python = { "isort", "black" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
+				java = { "google-java-format" },
 				svelte = { "prettier" },
 				bash = { "beautysh" },
 				css = { "prettier" },
