@@ -10,7 +10,7 @@ return {
 		require("neo-tree").setup({
 			window = {
 				position = "left",
-				width = 30,
+				width = 100,
 			},
 			event_handlers = {
 				{
