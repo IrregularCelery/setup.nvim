@@ -18,6 +18,7 @@ return { -- Autoformat
 				css = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
+				jsonc = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				["_"] = { "trim_whitespace" },
