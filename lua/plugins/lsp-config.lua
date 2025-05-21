@@ -88,4 +88,8 @@ return {
 			vim.keymap.set("n", "<leader>vh", telescope.help_tags, {})
 		end,
 	},
+	{
+		"hinell/lsp-timeout.nvim",
+		dependencies = { "neovim/nvim-lspconfig" },
+	},
 }
