@@ -61,6 +61,23 @@ return {
 				},
 			})
 
+			lspconfig.ts_ls.setup({
+				settings = {
+					javascript = {
+						format = {
+							enable = false, -- Conform handles this
+						},
+					},
+					typescript = {
+						format = {
+							enable = false, -- Conform handles this
+						},
+					},
+				},
+			})
+
+			lspconfig.eslint.setup({})
+
 			lspconfig.jdtls.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
