@@ -16,6 +16,7 @@ return { -- Autoformat
 				svelte = { "prettier" },
 				bash = { "beautysh" },
 				css = { "prettier" },
+				scss = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
 				jsonc = { "prettier" },
