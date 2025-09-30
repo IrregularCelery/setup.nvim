@@ -61,6 +61,20 @@ return {
 				},
 			})
 
+			lspconfig.svelte.setup({
+				capabilities = capabilities,
+				filetypes = { "svelte" },
+				settings = {
+					svelte = {
+						plugin = {
+							html = { completions = { enable = true, emmet = false } },
+							svelte = { completions = { enable = true } },
+							css = { completions = { enable = true } },
+						},
+					},
+				},
+			})
+
 			lspconfig.ts_ls.setup({
 				settings = {
 					javascript = {
