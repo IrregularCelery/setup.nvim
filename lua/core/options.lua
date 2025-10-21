@@ -6,11 +6,13 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.smartindent = true
+vim.o.breakindent = true
 
 vim.o.scrolloff = 8
 
 vim.o.updatetime = 150
 
+vim.o.signcolumn = "yes"
 vim.o.colorcolumn = "100"
 
 vim.o.termguicolors = true

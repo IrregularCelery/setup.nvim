@@ -6,9 +6,9 @@ local x = "x"
 local nv = { n, v }
 local niv = { n, i, v }
 local opts = {
-	n = { noremap = true },
-	s = { silent = true },
-	ns = { noremap = true, silent = true },
+  n = { noremap = true },
+  s = { silent = true },
+  ns = { noremap = true, silent = true },
 }
 
 -- Remap leader to `<space>` key
@@ -64,17 +64,17 @@ vim.keymap.set(n, "<leader>V", "<c-w>v", opts.ns)
 vim.keymap.set(n, "<leader>H", "<c-w>s", opts.ns)
 
 -- Move between windows
-vim.keymap.set(n, "<leader>h", "<c-w>h", opts.ns)
-vim.keymap.set(n, "<leader>j", "<c-w>j", opts.ns)
-vim.keymap.set(n, "<leader>k", "<c-w>k", opts.ns)
-vim.keymap.set(n, "<leader>l", "<c-w>l", opts.ns)
+vim.keymap.set(n, "<c-h>", "<c-w>h", opts.ns)
+vim.keymap.set(n, "<c-j>", "<c-w>j", opts.ns)
+vim.keymap.set(n, "<c-k>", "<c-w>k", opts.ns)
+vim.keymap.set(n, "<c-l>", "<c-w>l", opts.ns)
 
 -- Resize windows
-vim.keymap.set(n, "<c-e>", "<c-w>=", opts.ns)
-vim.keymap.set(n, "<c-h>", "5<c-w><", opts.ns)
-vim.keymap.set(n, "<c-j>", "<c-w>+", opts.ns)
-vim.keymap.set(n, "<c-k>", "<c-w>-", opts.ns)
-vim.keymap.set(n, "<c-l>", "5<c-w>>", opts.ns)
+vim.keymap.set(n, "<c-s-e>", "<c-w>=", opts.ns)
+vim.keymap.set(n, "<c-s-h>", "5<c-w><", opts.ns)
+vim.keymap.set(n, "<c-s-j>", "<c-w>+", opts.ns)
+vim.keymap.set(n, "<c-s-k>", "<c-w>-", opts.ns)
+vim.keymap.set(n, "<c-s-l>", "5<c-w>>", opts.ns)
 
 -- Disable arrow keys
 vim.keymap.set(niv, "<left>", "<nop>", opts.ns)
