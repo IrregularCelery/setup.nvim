@@ -1,4 +1,5 @@
 return {
+  -- Code formatter
   "stevearc/conform.nvim",
   event = { "BufWritePre" },
   config = function()

@@ -24,8 +24,5 @@ return {
   {
     -- Git wrapper
     "tpope/vim-fugitive",
-    config = function()
-      require("gitsigns").setup({})
-    end,
   },
 }

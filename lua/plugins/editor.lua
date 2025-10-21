@@ -1,5 +1,12 @@
 return {
   {
+    -- Undo/Redo
+    "mbbill/undotree",
+    config = function()
+      vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<cr><cmd>UndotreeFocus<cr>")
+    end,
+  },
+  {
     -- Quickly escape to `Normal` mode
     "max397574/better-escape.nvim",
     config = function()
