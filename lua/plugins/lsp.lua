@@ -50,6 +50,9 @@ return {
         -- Execute a code action for fixing an error or suggestion
         vim.keymap.set({ "n", "x" }, "<leader>a", vim.lsp.buf.code_action, { buffer = event.buf })
 
+        -- Show function signature in a popup
+        vim.keymap.set("i", "<C-j>", vim.lsp.buf.signature_help, { buffer = event.buf })
+
         local client = vim.lsp.get_client_by_id(event.data.client_id)
 
         if
