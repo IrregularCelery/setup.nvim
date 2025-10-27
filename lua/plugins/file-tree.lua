@@ -13,6 +13,12 @@ return {
         position = "left",
         width = 100,
       },
+      filesystem = {
+        follow_current_file = {
+          enabled = true,
+          leave_dirs_open = true,
+        },
+      },
       event_handlers = {
         {
           -- Close neotree on `file_opened`
