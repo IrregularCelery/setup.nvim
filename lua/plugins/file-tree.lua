@@ -12,6 +12,10 @@ return {
       window = {
         position = "left",
         width = 100,
+        mappings = {
+          ["h"] = "close_node",
+          ["l"] = "open",
+        },
       },
       filesystem = {
         follow_current_file = {
